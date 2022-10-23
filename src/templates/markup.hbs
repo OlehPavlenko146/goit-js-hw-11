@@ -1,0 +1,25 @@
+{{!-- <div class="card">
+  <div class="card-img">
+    <img src="{{flsgs.svg}}" alt="{{name}}">
+    <h1 class="card-title">{{name.common}}</h1>
+  </div>
+  <div class="card-body"> --}}
+{{! <ul class="card-list"></ul> }}
+{{#each this}}
+  <li>
+    <img src='{{flags.svg}}' alt='{{name}}' />
+    <h1 class='card-title'>{{name}}</h1>
+    <h2>Capital:
+      <p>{{capital}}</p>
+    </h2>
+    <h2>Population:
+      <p>{{population}}</p>
+    </h2>
+    <h2>Languages:
+      <p>{{#each languages}}{{this}}{{#unless @last}},{{/unless}}{{/each}}</p>
+    </h2>
+  </li>
+{{/each}}
+{{! </ul> }}
+{{! </div>
+</div> }}
